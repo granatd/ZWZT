@@ -1,6 +1,6 @@
 // JavaScript router in 20 lines
 // Joakim Carlstein - https://joakim.beng.se/
-import { engine } from './engine';
+import { engine } from './engine.js';
 let el = null;
 let events = [];
 const routes = {};

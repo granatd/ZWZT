@@ -1,4 +1,4 @@
-import { route } from './router';
+import { route } from './router.js';
 
 route('/', 'home', function() {
   this.where = 'here';
