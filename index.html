@@ -4,28 +4,9 @@
     <meta charset="utf-8" />
     <title>PureJS</title>
 
-    <script type="text/html" id="home">
-      <h1>Login page</h1>
-      <div id="msg"><%= msg %></div>
-      <form action="" method="post">
-        <label for="username">User name: </label>
-        <input
-          type="text"
-          name="username"
-          id="username"
-          placeholer="username"
-        />
+    <iframe id="home" src="./templates/home.html" style="display: none;"></iframe>
+    <iframe id="success" src="./templates/success.html" style="display: none;"></iframe>
 
-        <label for="pass">Hasło: </label>
-        <input type="password" name="pass" id="pass" placeholer="password" />
-        <input class="login-button" type="submit" value="Zaloguj" />
-      </form>
-    </script>
-
-    <script type="text/html" id="success">
-      <h1>Success page</h1>
-      <div id="msg"><%= msg %></div>
-    </script>
     <script type="text/html" id="404">
       <h1>404 Not found</h1>
     </script>
@@ -34,7 +15,7 @@
   <body>
     <nav>
       <a href="#">home</a>
-      <a href="#/ex1">example 1</a>
+      <a href="#/success">example 1</a>
       <a href="#/ex2">example 2</a>
     </nav>
     <div id="app"></div>
