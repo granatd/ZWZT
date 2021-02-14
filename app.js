@@ -43,5 +43,3 @@ route('/', 'home', function () {
 route('/success', 'success', function () {
   this.msg = msg;
 });
-
-route('*', '404', function () {});
