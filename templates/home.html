@@ -1,13 +1,26 @@
 <script type="text/html" id="home">
-  <h1>Login page</h1>
-  <div id="msg"><%= msg %></div>
-  <form action="" method="post">
-    <label for="username">User name: </label>
-    <input type="text" name="username" id="username" placeholer="username" />
+  <div class="homepage">
+    <div class="form-container">
+      <form action="" method="post">
+        <h1>Login page</h1>
+        <div class="failed-msg" id="msg"><%= msg %></div>
+        <div class="form-field">
+          <label for="username">Nazwa użytkownika: </label>
+          <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter username"
+          />
+        </div>
 
-    <label for="pass">Hasło: </label>
-    <input type="password" name="pass" id="pass" placeholer="password" />
+        <div class="form-field">
+          <label for="pass">Hasło: </label>
+          <input type="password" name="pass" id="pass" placeholder="Enter password" />
+        </div>
 
-    <input class="login-button" type="submit" value="Zaloguj" />
-  </form>
+        <input class="login-button" type="submit" value="Zaloguj" />
+      </form>
+    </div>
+  </div>
 </script>
